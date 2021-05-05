@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> </head>
-
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            Pasok Fans USA
+        </title>
+    </head>
     <body>
-        <iframe src="audio/source.mp3" allow="autoplay" style="display: none;" id="iframeAudio"> </iframe>
-        <audio autoplay loop id="playAudio">
-            <source src="audio/source.mp3" />
-        </audio>
-        <script>
-            var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-            if (!isChrome) {
-                $("#iframeAudio").remove();
-            } else {
-                $("#playAudio").remove(); // just to make sure that it will not have 2x audio in the background
-            }
-        </script>
+        <br />
+        <h1 align="center">Pasok Fans USA</h1>
+
+		<ul>
+			<li><h2><a href="#1">Our Mission</a></p></li>
+			<li><h2><a href="#2">Channel</a></p></li>
+			<li><h2><a href="#3">Members</a></p></li>
+			<li><h2><a href="#4">Social</a></p></li>
+			<li><h2><a href="#5">Contact Us!</a></p></li>
+		</ul>
+
+		<h2 id="1">Our Mission</h2>
+		<h2 id="2">Channel</h2>
+		<h2 id="3">Members</h2>
+		<h2 id="4">Social</h2>
+		<h2 id="5">Contact Us!</h2>
+
+
     </body>
 </html>
