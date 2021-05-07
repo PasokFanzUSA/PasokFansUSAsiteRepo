@@ -19,7 +19,48 @@
 		</ul>
 
 		<h2 id="1">Our Mission</h2>
+		<p>We live in a society. <br>
+
+			Wherever in the world you are, look outside. Aren’t you disgusted by the sight? <br>
+			
+			In China, minorities are being abused to maximize production, and to create the illusion of a prosperous socialist utopia. <br>
+			
+			In America, everyone is disgustingly trying to kill each other: Team Biden vs Team Trump. However, deep down, they are all just filthy disgusting imperialists. <br>
+			
+			In Russia, the remnants of a superpower are led by a terrible authoritarian leader, still busy pointing their nuclear missiles. <br>
+			
+			In the European Union, democracy is bogged down by corruption, lobbying, and bureaucracy. It is not an organization to support the masses; it is a way for the rich elites to pocket more money.<br>
+			
+			821 million people sleep hungry. <br>
+			
+			The media are desperate to get the people’s attention on other matters - for example, silly American politics. However, they are all the same. Every day, more and more people are slowly waking up. <br>
+			
+			Waking up. Waking up to search for enlightenment through PasokFansUSA. <br>
+			
+			On September 3rd, 1974, Andreas Papandreou founded Pasok. Pasok was never just a party - it was a lifestyle, a movement. Unsurprisingly, Pasok kept on winning in Greece. <br>
+			
+			Greece was prospering. However, enter the antagonists: Nea Dimokratia (ND). From the year 2000, they started sabotaging Pasok. Finally, by 2018, ND’s agents caused Pasok to collapse. A new puppet was set up. <br>
+			
+			They thought it was over. They thought that the last liberation front had ended. However, this isn’t the case! <br>
+			
+			From the shadows, PasokFansUSA rises! For years, it has been gaining strength - a group of freedom fighters keen to continue Pasok’s legacies. <br>
+			
+			PasokFansUSA’s mission is simple - the liberation and enlightenment of the masses. <br>
+			
+			PasokFansUSA is exposing secrets that the elites do not want you to know. <br>
+			
+			Victory is inevitable. Pasok will prevail. <br>
+			</p>
 		<h2 id="2">Channel</h2>
+		
+		<p>
+			Be sure to check out our youtube channel here, being used to liberate and enlighten the masses! Click <a href="https://www.youtube.com/channel/UCN3GzoHVOeFRhyy-7rbGRsg">here!</a>.
+		</p>
+
+		<iframe 
+		width="1903" height="797" src="https://www.youtube.com/embed/IxhcQ9q35nQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+		</iframe>
+
 		<h2 id="3">Members</h2>
 
 			<h3>Our glorious cofounders and the masterminds behind all operations, Leonidas M and George K.</h3>
@@ -40,125 +81,6 @@
 
 		<h2 id="4">Social</h2>
 		<h2 id="5">Contact Us!</h2>
-		<div class="fcf-body">
-
-			<div id="fcf-form">
-			<h3 class="fcf-h3">Contact us</h3>
-		
-			<form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-				
-				<div class="fcf-form-group">
-					<label for="Name" class="fcf-label">Your name</label>
-					<div class="fcf-input-group">
-						<input type="text" id="Name" name="Name" class="fcf-form-control" required>
-					</div>
-				</div>
-		
-				<div class="fcf-form-group">
-					<label for="Email" class="fcf-label">Your email address</label>
-					<div class="fcf-input-group">
-						<input type="email" id="Email" name="Email" class="fcf-form-control" required>
-					</div>
-				</div>
-		
-				<div class="fcf-form-group">
-					<label for="Message" class="fcf-label">Your message</label>
-					<div class="fcf-input-group">
-						<textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-					</div>
-				</div>
-		
-				<div class="fcf-form-group">
-					<button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
-				</div>
-		
-		
-			</form>
-			</div>
-		
-		</div>
-
-		<?php
-if (isset($_POST['Email'])) {
-
-    // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "skikosd23@stu.acs.gr";
-    $email_subject = "New form submissions";
-
-    function problem($error)
-    {
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-        echo "These errors appear below.<br><br>";
-        echo $error . "<br><br>";
-        echo "Please go back and fix these errors.<br><br>";
-        die();
-    }
-
-    // validation expected data exists
-    if (
-        !isset($_POST['Name']) ||
-        !isset($_POST['Email']) ||
-        !isset($_POST['Message'])
-    ) {
-        problem('We are sorry, but there appears to be a problem with the form you submitted.');
-    }
-
-    $name = $_POST['Name']; // required
-    $email = $_POST['Email']; // required
-    $message = $_POST['Message']; // required
-
-    $error_message = "";
-    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-
-    if (!preg_match($email_exp, $email)) {
-        $error_message .= 'The Email address you entered does not appear to be valid.<br>';
-    }
-
-    $string_exp = "/^[A-Za-z .'-]+$/";
-
-    if (!preg_match($string_exp, $name)) {
-        $error_message .= 'The Name you entered does not appear to be valid.<br>';
-    }
-
-    if (strlen($message) < 2) {
-        $error_message .= 'The Message you entered do not appear to be valid.<br>';
-    }
-
-    if (strlen($error_message) > 0) {
-        problem($error_message);
-    }
-
-    $email_message = "Form details below.\n\n";
-
-    function clean_string($string)
-    {
-        $bad = array("content-type", "bcc:", "to:", "cc:", "href");
-        return str_replace($bad, "", $string);
-    }
-
-    $email_message .= "Name: " . clean_string($name) . "\n";
-    $email_message .= "Email: " . clean_string($email) . "\n";
-    $email_message .= "Message: " . clean_string($message) . "\n";
-
-    // create email headers
-    $headers = 'From: ' . $email . "\r\n" .
-        'Reply-To: ' . $email . "\r\n" .
-        'X-Mailer: PHP/' . phpversion();
-    @mail($email_to, $email_subject, $email_message, $headers);
-?>
-
-    <!-- include your success message below -->
-
-    Thank you for contacting us. We will be in touch with you very soon.
-
-<?php
-}
-?>
-
-
-
-
-
 
     </body>
 </html>
