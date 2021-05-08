@@ -5,6 +5,85 @@
         <title>
             Pasok Fans USA
         </title>
+		<style>
+			.slideshow {
+			  margin: 50px auto;
+			  width: 1256px;
+			  height: 628px;
+			  overflow: hidden;
+			  border: 10px solid;
+			  border-top-color: #856036;
+			  border-left-color: #5d4426;
+			  border-bottom-color: #856036;
+			  border-right-color: #5d4426;
+			  position: relative;
+			}
+			
+			.photo {
+			  position: absolute;
+			  animation: round 16s infinite;
+			  opacity: 0;
+			}
+			
+			@keyframes round {
+			  25% {
+				opacity: 1;
+			  }
+			  40% {
+				opacity: 0;
+			  }
+			}
+			img:nth-child(1) {
+			  animation-delay: 66s;
+			}
+			
+			img:nth-child(2) {
+			  animation-delay: 60s;
+			}
+			
+			img:nth-child(3) {
+			  animation-delay: 54s;
+			}
+			
+			img:nth-child(4) {
+			  animation-delay: 48s;
+			}
+
+			img:nth-child(5) {
+			  animation-delay: 42s;
+			}
+
+			img:nth-child(6) {
+			  animation-delay: 36s;
+			}
+
+			img:nth-child(7) {
+			  animation-delay: 30s;
+			}
+
+			img:nth-child(8) {
+			  animation-delay: 24s;
+			}
+
+			img:nth-child(9) {
+			  animation-delay: 18s;
+			}
+
+			img:nth-child(10) {
+			  animation-delay: 12s;
+			}
+
+			img:nth-child(11) {
+			  animation-delay: 6s;
+			}
+
+			img:nth-child(12) {
+			  animation-delay: 0s;
+			}
+
+		  </style>
+		
+
     </head>
     <body>
         <br />
@@ -14,7 +93,8 @@
 			<li><h2><a href="#1">Our Mission</a></p></li>
 			<li><h2><a href="#2">Channel</a></p></li>
 			<li><h2><a href="#3">Members</a></p></li>
-			<li><h2><a href="#4">Contact Us!</a></p></li>
+			<li><h2><a href="#4">Images</a></p></li>
+			<li><h2><a href="#5">Contact Us!</a></p></li>
 		</ul>
 
 		<h2 id="1">Our Mission</h2>
@@ -77,8 +157,25 @@
 			 	<p>Tommy P, epic gamer and generous donor.</p>
 			 </li>
 
+		
+		<h2 id="4">Images</h2>
 
-		<h2 id="4">Contact Us!</h2>
+		<div class="slideshow">
+			<img class='photo'  src="media/images/fliers/f1.jpg" alt="Image 1" />
+			<img class='photo'  src="media/images/fliers/f2.jpg" alt="Image 2" />
+			<img class='photo'  src="media/images/fliers/f3.png" alt="Image 3" />
+			<img class='photo'  src="media/images/fliers/f4.png" alt="Image 4" />
+			<img class='photo'  src="media/images/fliers/f5.jpg" alt="Image 5" />
+			<img class='photo'  src="media/images/fliers/f6.jpg" alt="Image 6" />
+			<img class='photo'  src="media/images/fliers/f7.jpg" alt="Image 7" />
+			<img class='photo'  src="media/images/fliers/f8.jpg" alt="Image 8" />
+			<img class='photo'  src="media/images/fliers/f9.jpg" alt="Image 9" />
+			<img class='photo'  src="media/images/fliers/f10.jpg" alt="Image 10" />
+			<img class='photo'  src="media/images/fliers/f11.jpg" alt="Image 11" />
+			<img class='photo'  src="media/images/fliers/f12.jpg" alt="Image 12" />
+		  </div>
+
+		<h2 id="5">Contact Us!</h2>
 
 		<ul>
 			<li>
